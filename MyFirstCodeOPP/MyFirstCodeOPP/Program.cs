@@ -8,7 +8,7 @@ namespace MyFirstCodeOPP
         {
             try
             {
-                var dateObject = new Date(99, 2, 12);
+                var dateObject = new Date(2003, 2, 12);
                 Console.WriteLine(dateObject);
 
             }
