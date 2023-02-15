@@ -17,7 +17,7 @@ namespace MyFirstCodeOPP
         {
             _year = ValidateYear(year);
             _month = ValidateMonth(month);
-            _day = ValidateDay(day, month);
+            _day = ValidateDayRefactor(day, month);
         }
         #endregion
 
@@ -38,7 +38,7 @@ namespace MyFirstCodeOPP
                 throw new DayException("The day is invalid!");
             }
 
-            if (month == 1 || month == 3 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+            if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
             {
                 if (day >= 1 && day <= 31)
                 {
@@ -51,6 +51,24 @@ namespace MyFirstCodeOPP
                 {
                     return day;
                 }
+            }
+            throw new DayException("The day is invalid!");
+        }
+
+        private int ValidateDayRefactor(int day, int month)
+        {
+            int[] thirtyOne = { 1, 3, 5, 7, 8, 10, 12 };
+            if (Array.IndexOf(thirtyOne, month) != -1 && (day >=1 && day <=31))
+            {
+                return day;
+            }
+            else if (month == 2 && (day >= 1 && day <= 28))
+            {
+                return day;
+            }
+            else if (month != 2 && (day >= 1 && day <= 30))
+            {
+                return day;
             }
             throw new DayException("The day is invalid!");
         }
