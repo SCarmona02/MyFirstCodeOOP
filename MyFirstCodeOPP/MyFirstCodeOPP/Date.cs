@@ -6,7 +6,7 @@ namespace MyFirstCodeOPP
 {
     public class Date
     {
-        #region Properties
+        #region Fields
         public int _year;
         public int _month;
         public int _day;
