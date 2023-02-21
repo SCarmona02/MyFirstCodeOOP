@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyFirstCodeOPP
 {
-    internal class CommissionEmployee : Employee
+    public class CommissionEmployee : Employee
     {
         #region Properties
         public float CommissionPercentage { get; set; }
