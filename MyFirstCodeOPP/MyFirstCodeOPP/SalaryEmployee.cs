@@ -21,7 +21,7 @@ namespace MyFirstCodeOPP
         public override string ToString()
         {
             return $"{base.ToString()} \n\t " +
-                $"Value to Pay: {GetValuesToPay()}";
+                $"Value to Pay:............................{GetValuesToPay():C2}";
         }
 
         #endregion

@@ -29,12 +29,14 @@ namespace MyFirstCodeOPP
             //    $"Is Active? {IsActive}";
 
             return String.Format("---EMPLOYEE---\n\t " +
-                "ID: {0} \n\t " +
-                "First Name: {1} \n\t " +
-                "Last Name: {2} \n\t " +
-                "Birth Date: {3} \n\t " +
-                "Hiring Date: {4} \n\t " +
-                "Is Active? {5}", Id, FirstName, LastName, BirthDate, HiringDate, IsActive);
+                "ID:...................................... {0} \n\t " +
+                "First Name:.............................. {1} \n\t " +
+                "Last Name:............................... {2} \n\t " +
+                "Birth Date:.............................. {3} \n\t " +
+                "Hiring Date:............................. {4} \n\t " +
+                "Is Active?:.............................. {5}", Id, FirstName, LastName, BirthDate, HiringDate, IsActive);
+
+        //..........................................
         }
         #endregion
     }
