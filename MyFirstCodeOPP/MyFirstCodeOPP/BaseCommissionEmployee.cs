@@ -11,9 +11,14 @@ namespace MyFirstCodeOPP
         #endregion
 
         #region Methods
-        public override decimal GetValuesToPay()
+        //public override decimal GetValuesToPay()
+        //{
+        //    //return ((Sales * (decimal)ConvertPercentage(CommissionPercentage)) + Base);
+        //    return base.GetValuesToPay() + Base;
+        //}
+
+        public decimal NewGetValueToPay()
         {
-            //return ((Sales * (decimal)ConvertPercentage(CommissionPercentage)) + Base);
             return base.GetValuesToPay() + Base;
         }
 
@@ -21,7 +26,7 @@ namespace MyFirstCodeOPP
         {
             return $"{base.ToString()} \n\t " +
                 $"Salary Base:..............................{Base:C2} \n\t " +
-                $"Value to pay with base....................{GetValuesToPay():C2}";
+                $"Value to pay with base....................{NewGetValueToPay():C2}";
         }
         #endregion
     }
