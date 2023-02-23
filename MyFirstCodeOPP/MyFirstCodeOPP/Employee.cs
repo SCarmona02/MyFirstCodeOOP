@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MyFirstCodeOPP.Interface;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MyFirstCodeOPP
 {
-    public abstract class Employee
+    public abstract class Employee : IPay
     {
         #region Properties
         public int Id { get; set; }

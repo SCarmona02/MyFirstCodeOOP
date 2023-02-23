@@ -322,6 +322,22 @@ namespace MyFirstCodeOPP
 
                 Console.WriteLine($"Total Payroll:.................................... {employeeHelper.GetPayrollFromActiveEmployees():C2}");
 
+                Console.WriteLine("");
+
+                Console.WriteLine("*******************************");
+                Console.WriteLine("*********** INVOICE ***********");
+                Console.WriteLine("*******************************");
+
+                Invoice invoice = new Invoice()
+                {
+                    Id = 1,
+                    Description = "iPhon13",
+                    Price = 45000000,
+                    Quantity = 2,
+                };
+
+                Console.WriteLine(invoice);
+
             }
             catch (Exception ex)
             {
